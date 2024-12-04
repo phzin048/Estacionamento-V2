@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle do Estacionamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Controle do Estacionamento</h2>
+
+    <div id="form-container">
+        <label for="placa">Placa do Carro:</label>
+        <input type="text" id="placa" placeholder="Digite a placa do carro">
+
+        <label for="pagou">Pagou o estacionamento?</label>
+        <select id="pagou">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <button onclick="adicionarEstacionamento()">Adicionar</button>
+    </div>
+
+    <div id="estacionamentos-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
